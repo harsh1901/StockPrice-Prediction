@@ -1,3 +1,5 @@
+#pip install -r requirement.txt
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -49,4 +51,5 @@ plt.ylabel('Close Price USD ($)')
 plt.plot(data['Close'], label='Historical')
 plt.plot(valid[['Predictions']], label='Predicted', color='YELLOW')
 plt.legend()
+
 plt.show()
